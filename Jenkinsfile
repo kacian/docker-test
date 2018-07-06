@@ -1,7 +1,7 @@
 #!groovy
 final ansiColorMapName = 'xterm'
 
-node {
+node('digitalprint'){
     def app
 
     stage('Clone repository') {

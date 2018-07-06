@@ -10,6 +10,7 @@ node('digitalprint'){
         checkout scm
     }
 
+  dir('dupa') {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
@@ -36,4 +37,5 @@ node('digitalprint'){
             app.push("latest")
         }
     }
+  }
 }
